@@ -214,7 +214,7 @@ function runBot(error, auth) {
 
             if (data.currentDJ != null) {
                 logger.success('********************************************************************');
-                logger.success('[UPTIME]', 'Bot online ' + timeSince(startupTimestamp, true));
+                logger.success('[UPTIME]', '' + timeSince(startupTimestamp, true));
                 logger.success('[SONG]', data.currentDJ.username + ' played: ' + data.media.author + ' - ' + data.media.title);
             }
 
